@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="
+        alert ('Pravokutnik: ' + '\n a= 5m' + '\n b = 6m'  + '\n Povrsina pravokutnika = ' + (5*6) + 
+          '\n Kvadrat: ' + '\n a= 3.6m' + '\n P = ?' + '\n Povrsina Kvadrata = ' + (3.6*3.6) + 'm' + 
+         '\n' + '\n Povrsina Kruga: ' + '\n r = 8m' + '\n P = ?' + '\n Povrsina Kruga = ' + (8 *8 * 3.14) + 'm ')
+        " class="calculation-btn">
+        Izracunaj
+    </button>
+
+    <button onclick="
+    let a = 1;  // Koeficijent uz x²
+let b = 2;  // Koeficijent uz x
+let c = 1;  // Konstanta
+
+// Diskriminanta
+let discriminant = b * b - 4 * a * c;
+
+let x1 = (-b / (2 * a));
+
+alert('Kvadratna jednadžba: \n' +
+      'x² + 2x + 1 = 0\n' +
+      '\nRješenje kvadratne jednadžbe: \n' +
+      'Diskriminanta = ' + discriminant + '\n' +
+      'x1 = ' + x1);
+
+    ">
+        ja sam ivan
+    </button>
+
+
+
+
+
+    <style>
+        .calculation-btn {
+            background-color: red;
+            width: 200px;
+            height: 75px;
+            border: none;
+            color: white;
+            margin-left: 100px;
+            margin-top: 100px;
+            font-weight: bold;
+            font-size: 30px;
+        }
+    </style>
+</body>
+</html>
