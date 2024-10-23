@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    
+    <button class="rock-btn" onclick="
+const broj = Math.random();
+    console.log(Math.random(broj))
+    if (0<broj && broj <=1/3 ){
+        spremnik = 'rock';
+    } else if (broj>1/3 && broj <=2/3){
+        spremnik = 'paper';
+    } else {
+        spremnik= 'scissors';
+    }
+    if (spremnik=== 'scissors') {
+        result = 'win';
+    } else if (spremnik === 'stone') {
+      result = 'draw';
+    } else if( spremnik === 'paper') {
+        result='lose'; 
+    }
+    alert(` We choose stone, computer choose ${spremnik}. Result is ${result}. `)
+
+    ">Rock</button>
+
+    <button class="paper-btn" onclick="
+const broj = Math.random();
+    console.log(Math.random(broj))
+    if (0<broj && broj <=1/3 ){
+        spremnik = 'rock';
+    } else if (broj>1/3 && broj <=2/3){
+        spremnik = 'paper';
+    } else {
+        spremnik= 'scissors';
+    }
+    if (spremnik=== 'scissors') {
+        result = 'lose';
+    } else if (spremnik === 'stone') {
+      result = 'win';
+    } else if( spremnik === 'paper') {
+        result='draw'; 
+    }
+    alert(` We choose stone, computer choose ${spremnik}. Result is ${result}. `)
+
+    ">Paper</button>
+
+    <button class="scissors-btn" onclick="
+const broj = Math.random();
+    console.log(Math.random(broj))
+    if (0<broj && broj <=1/3 ){
+        spremnik = 'rock';
+    } else if (broj>1/3 && broj <=2/3){
+        spremnik = 'paper';
+    } else {
+        spremnik= 'scissors';
+    }
+   
+    if (spremnik=== 'scissors') {
+        result = 'win';
+    } else if (spremnik === 'stone') {
+      result = 'draw';
+    } else if( spremnik === 'paper') {
+        result='lose'; 
+    }
+    alert(` We choose stone, computer choose ${spremnik}. Result is ${result}. `)
+
+    ">Scissors</button>
+
+
+
+
+    <script>
+let spremnik = '';
+let result= ''; 
+    </script>
+</body>
+
+</html>
