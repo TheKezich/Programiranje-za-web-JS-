@@ -48,12 +48,11 @@ const broj = Math.random();
     } else if( spremnik === 'paper') {
         result='draw'; 
     }
-    alert(` We choose stone, computer choose ${spremnik}. Result is ${result}. `)
+    alert(` We choose paper, computer choose ${spremnik}. Result is ${result}. `)
 
     ">Paper</button>
 
     <button class="scissors-btn" onclick="
-const broj = Math.random();
     console.log(Math.random(broj))
     if (0<broj && broj <=1/3 ){
         spremnik = 'rock';
@@ -70,7 +69,7 @@ const broj = Math.random();
     } else if( spremnik === 'paper') {
         result='lose'; 
     }
-    alert(` We choose stone, computer choose ${spremnik}. Result is ${result}. `)
+    alert(` We choose scissors, computer scissors ${spremnik}. Result is ${result}. `)
 
     ">Scissors</button>
 
@@ -80,6 +79,7 @@ const broj = Math.random();
     <script>
 let spremnik = '';
 let result= ''; 
+const broj = Math.random();
     </script>
 </body>
 

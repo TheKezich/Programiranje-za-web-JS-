@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="button-container">
+        <button class="math-btn" onclick="
+        let a=3
+        let b=2
+        let c=5
+        let dD=b*b - 4 * a*c;
+        if(dD>0) {
+            alert ('Kvadratna jednadžba ima dva rješenja!')
+        } else if (dD<0) {
+            alert('Kvadratna jednadžba ima kompleksno konjugirana rješenja!')
+        } else if (dD===0) {
+            alert ('kvadratna jednadžba ima jedno dvostruko rješenje!')
+        }
+        ">
+    RAČUNANJE DISKRIMINANTE</button>
+
+    <button class="grade-btn" onclick="
+    let bodovi=23;
+
+    if (bodovi >= 90 && bodovi <= 100) {
+        alert ('Ocjena je odličan!')
+    }
+    if (bodovi >= 70 && bodovi <= 89) {
+        alert ('Ocjena je vrlo dobar!')
+    }
+    if (bodovi >= 50 && bodovi <= 69) {
+        alert ('Ocjena je dobar!')
+    }
+    if (bodovi >= 30 && bodovi <= 49) {
+        alert ('Ocjena je dovoljan!')
+    }
+    if ( bodovi <= 30) {
+        alert ('Ocjena je nedovoljan!')
+    }
+    
+    "  >
+        REZULTATI IZ TESTA
+    </button>
+
+    </div>
+
+   
+    <style>
+       body {
+        margin-top: 30px;
+       }
+
+       .button-container {
+        display: flex;
+       }
+
+
+        .math-btn {
+            font-family: Arial, Helvetica, sans-serif;
+            width: 150px;
+            height: 70px;
+            background-color: rgb(0, 42, 255);
+            border: none;
+            border-radius: 50px;
+            color: white;
+            font-weight: bold;
+        }
+
+        .grade-btn {
+            font-family: Arial, Helvetica, sans-serif;
+            width: 150px;
+            height: 70px;
+            background-color: rgb(255, 0, 0);
+            border: none;
+            border-radius: 50px;
+            color: white;
+            font-weight: bold;
+            margin-left: 20px;
+
+        }
+
+       
+    </style>
+</body>
+</html>
