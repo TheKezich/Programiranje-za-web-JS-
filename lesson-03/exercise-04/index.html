@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p class="test-result">
+        TEST RESULT:
+    </p>
+
+    <button class="grade-btn" onclick="
+    let bodovi=23;
+
+    if (bodovi >= 90 && bodovi <= 100) {
+        alert ('You got A')
+    }
+    if (bodovi >= 80 && bodovi <= 89) {
+        alert ('You got B')
+    }
+    if (bodovi >= 70 && bodovi <= 79) {
+        alert ('You got C')
+    }
+    if (bodovi >= 60 && bodovi <= 69) {
+        alert ('You got D')
+    }
+    if ( bodovi <= 60) {
+        alert ('You got F')
+    }
+    
+    "  >
+        <img src="images/moai-emoji.png" alt="" class="grade-img">
+    </button>
+
+
+    <style>
+
+        body {
+            background-color: rgb(25, 25, 25);;
+        }
+
+        .test-result {
+
+            display: inline-block;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            font-weight: bold;
+            font-size: 30px;
+            margin-left: 50px;
+
+
+        }
+
+        .grade-btn {
+            background-color: transparent;
+            border-style: solid;
+            border-color: white;
+            padding: 20px;
+            display: flex;
+            margin-left: 50px;
+            border-width: 6px;
+            border-radius: 30px;
+        }
+
+        .grade-img {
+            background-color: transparent;
+            width: 90px;
+            height: 90px;
+        }
+
+        
+    </style>
+
+
+</body>
+</html>

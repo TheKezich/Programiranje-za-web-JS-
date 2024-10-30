@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p class="klik-p">Klikni da dobijes vozacku dozvolu!</p>
+
+    <button class="vozacka-dozvola-btn"
+    onclick="
+     if (godine < 18) {
+        alert ('Nemate dovoljno godina za vozacku dozvolu!')
+    } else if ( !lijecnickiPregled || !vozackiIspit ) {
+        alert ('Nedostaju vam uvjeti za da dobivanje dozvole!')
+    } else  {
+        alert ('Mozete dobiti vozacku dozvolu!')
+    }
+
+    ">
+        <img class="driver-licence-img" src="images/vozacka-dozvola.webp" alt="">
+    </button>
+
+    <script>
+    
+    let godine = 18;
+    let lijecnickiPregled = true;
+    let vozackiIspit = true;
+
+   
+    </script>
+
+    
+<style>
+        body {
+            background-color: rgb(25, 25, 25);
+
+}
+
+    .vozacka-dozvola-btn {
+        
+        background-color: transparent;
+        border-radius: 1000px;
+        border-color: white;
+        border-style: solid;
+        width: 235px;
+        height: 235px;
+        border-width: 4px;
+        margin-right: 22px;
+        margin-left: 32px;
+        margin-top: 40px;
+        margin-left: 500px;
+
+    }
+
+    .driver-licence-img {
+        width: 150px;
+        height: 150px;
+        
+    }
+
+    .klik-p {
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 45px;
+        display: flex;
+        font-weight: bold;
+        margin-left: 30px;
+        justify-content: center;
+    }
+
+    
+</style>
+</body>
+
+
+
+
+</html>
