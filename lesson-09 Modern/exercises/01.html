@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const skladiste = {
+            proizvodi: [{naziv:'kruh', kolicina:10}, {naziv:'sir', kolicina:8}, {naziv:'whey', kolicina:2}]
+        }
+        let ukupno = 0;
+        for (let i = 0; i < skladiste.proizvodi.length; i++) {  
+            ukupno += skladiste.proizvodi[i].kolicina;
+        }
+        alert(`Ukupan broj proizvoda je ${ukupno}`);
+    </script>
+</body>
+</html>

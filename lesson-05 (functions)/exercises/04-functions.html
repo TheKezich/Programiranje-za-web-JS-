@@ -1,0 +1,25 @@
+<!-- funkcija koja prima 2 broja 
+ako je prvi broj <2 onda ih zbrojimo
+ako je broj > broj2 onda napravimo razliku broj1 - broj2 
+ako je broj 1 = 2 * broj2 onda kolicnik broj1 / broj 2
+ako je broj 1 = broj2 onda umnozak!
+  -->
+
+  <script>
+
+        function zadatak (broj1 , broj2) {
+            
+            if (broj1 === 3){
+                return broj1 + broj2;
+            } else if (broj1 > broj2) {
+                return broj1 - broj2;
+            }  else if (broj1 === 2*broj2) {
+                return broj1 / broj2;
+            } else if (broj1 === broj2) {
+                return broj1 * broj2;
+            }
+        }
+
+        alert(zadatak (5,5));
+
+  </script>

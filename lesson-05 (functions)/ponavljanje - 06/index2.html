@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        for (let i = 1; i <= 20; i++) {
+    if (i % 2 === 0) {
+        console.log(i);
+    }
+}
+
+let n = 10; 
+let sum = 0;
+
+for (let i = 1; i <= n; i++) {
+    sum += i; 
+}
+
+console.log(`Zbroj brojeva od 1 do ${n} je: ${sum}`);
+        
+
+        let broj  = 12345;
+        let obrnutiBroj = 0;
+
+        while(broj>0) {
+            let znamenka = broj% 10;
+            obrnutiBroj= obrnutiBroj*10 + znamenka;
+            broj=Math.floor(broj/10);
+
+        }
+        alert(obrnutiBroj)
+    </script>
+
+</body>
+</html>

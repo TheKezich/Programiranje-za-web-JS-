@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const object1 = {
+            ime: 'ivan',
+            prezime: 'kežić',
+            godine: 12
+
+        };
+
+        if (object1.godine >= 18) {
+            console.log ('Osoba je punoljetna')
+        } else {
+            console.log ('Osoba je maloljetna(kidara)!!')
+        }
+
+        const podatci = {
+            grad: 'Bibinje',
+            temperatura: 27,
+            vrijeme: 'sunčano'
+        };
+
+        if (podatci.temperatura < 0) {
+            console.log(`U gradu ${podatci.grad} stupnjeva je ${podatci.temperatura}, što znaci da nije nimalo ${podatci.vrijeme}!`)
+        } else if (podatci.temperatura <= 20) {
+            alert (`U gradu ${podatci.grad} stupnjeva je ${podatci.temperatura}, što znaci da nije ${podatci.vrijeme}!`)
+        } else if (podatci.temperatura > 20) {
+            alert (`U gradu ${podatci.grad} stupnjeva je ${podatci.temperatura}, što znaci da je ${podatci.vrijeme}!`)
+        }
+    </script>
+</body>
+</html>

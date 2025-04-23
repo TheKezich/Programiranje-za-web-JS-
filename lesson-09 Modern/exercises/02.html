@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+const proizvodi = [
+    { naziv: "Mobitel", cijena: 1200 },
+    { naziv: "Slušalice", cijena: 40 },
+    { naziv: "Monitor", cijena: 700 },
+];
+for (let i = 0; i < proizvodi.length; i++) {
+    if (proizvodi[i].cijena > 50) {
+        console.log(`Proizvod: ${proizvodi[i].naziv}, Cijena: ${proizvodi[i].cijena}`);
+    }
+}
+
+    </script>
+</body>
+</html>

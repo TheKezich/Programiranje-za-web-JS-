@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dobrodošli na kupnju Porschea</title>
+  <link rel="stylesheet" href="ex2.css">
+</head>
+<body>
+  <div class="hero">
+    <div class="content">
+      <h1>Dobrodošli na kupnju Porschea</h1>
+      <p>Izaberite savršen model koji odgovara vašim željama i potrebama.</p>
+      <button onclick="provjeriDostupnost()">Dostupnost</button>
+    </div>
+  </div>
+
+  <script>
+
+    const ucenik = {
+        ime: 'Ivan',
+        prezime: 'Kezić',
+        bodovi: 100
+    };
+
+    if (ucenik.bodovi > 50) {
+        console.log (`Ucenik ${ucenik.ime} ${ucenik.prezime} je položio! GG!`)
+    } else if (ucenik.bodovi <= 50) {
+        console.log (`Ucenik ${ucenik.ime} ${ucenik.prezime} nije položio! GG!`)
+    }
+
+    const proizvod = {
+      naziv: 'Porsche GT 3 RS',
+      cijena: 22, 
+      dostupnost: true
+    };
+
+    function provjeriDostupnost() {
+      if (proizvod.dostupnost === true) {
+        alert(`Proizvod ${proizvod.naziv} je dostupan po cijeni od ${proizvod.cijena} milijuna dolara!`);
+      } else {
+        alert(`Proizvod ${proizvod.naziv} nije dostupan.`);
+      }
+    }
+
+    const sportskiTim = {
+    ime: 'MNK Unka',
+    bodovi: 21,
+    liga: '1. liga Jug',
+};
+
+if (sportskiTim.bodovi > 30) {
+    console.log(`Tim ${sportskiTim.ime} iz lige ${sportskiTim.liga} je u gornjem djelu tablice!`);
+} else if (sportskiTim.bodovi <= 30) {
+    console.log(`Tim ${sportskiTim.ime} iz lige ${sportskiTim.liga} je u dojnjem djelu tablice!`);
+}
+
+const student = {
+    ime: 'Mate',
+    prosjek: 4.56,
+    fakultet: 'Filozofski Fakultet Zagreb',
+};
+
+if (student.prosjek > 4.50) {
+    console.log(`Student ${student.ime} s fakulteta ${student.fakultet} ima odličan prosjek!`);
+} else if (student.prosjek <= 4.50) {
+    console.log(`Student ${student.ime} s fakulteta ${student.fakultet} ima dobar prosjek!`);
+}
+
+
+    const bankovniRacun = {
+        ime: 'TopG',
+        stanje: 12056000,
+        vrsta: 'tekuci racun',
+    };
+
+    if (bankovniRacun.stanje > 10000) {
+        console.log(`Racun ${bankovniRacun.vrsta} vlasnika ${bankovniRacun.ime} ima visoko stanje.`)
+    } else if (bankovniRacun.stanje <= 10000) {
+        console.log(`Racun ${bankovniRacun.vrsta} vlasnika ${bankovniRacun.ime} ima nisko stanje.`)
+    }
+
+    const student2 = {
+        ime: 'Ivan',
+        prezime: 'Kezic',
+        ocjene: [5,4,5,5]
+    };
+
+    let zbroj = 0;
+
+    for (let i = 0; i < student2.ocjene.length; i++)  {
+        zbroj += student2.ocjene [i]
+    }
+
+    let prosjek = zbroj / student2.ocjene.length
+
+    if (prosjek >= 4.5) {
+        console.log('Student je odlican!')
+    }else {
+        console.log('Student treba poboljsati rezultate')
+    }
+
+  </script>
+</body>
+</html>
+
+
+
+
+

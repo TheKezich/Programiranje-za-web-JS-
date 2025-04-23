@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1 zadatak 
+      console.log('Volim Matišu!')
+
+      // 2 zadatak
+        let broj1 = 7;
+        let broj2 = 6;
+        let zbroj = broj1 + broj2;
+        let razlika = broj1 - broj2;
+        let produkt = broj1*broj2;
+        let kolicnik = Math.round(broj1 / broj2);
+
+        console.log (produkt);
+
+        //3 zadatak - PARNOST
+
+        
+        let broj = 4;
+
+        if (broj %2===0) {
+            console.log ('Broj je paran')
+        } else {console.log ('Neparan!')}
+
+    let temp = 22;
+
+    if (temp === 0 ) {
+        alert ('Vrlo Hladno')
+    } else if (temp >= 0 && temp <= 10) {
+        alert ('Hladno')
+    } else if (temp > 10 && temp < 20 ) {
+        console.log ('Svjeze!')
+    } else if (temp >= 20 && temp < 30) {
+        console.log ('Toplo')
+    } else if (temp >= 30) {
+        console.log ('Sparno!')
+    }
+
+    </script>
+
+<button onclick="
+          
+let unesenoIme = 'ivean';
+let ime = 'ivan';
+let unesenaLozinka = 'keza12';
+let lozinka = 'keza12';
+
+if (unesenoIme === ime && unesenaLozinka === lozinka) {
+    console.log ('Dobrodosao!')
+} else console.log('Neispravna lozinka ili korisnicko ime!')
+
+">SIGMA!</button>
+
+
+<script>
+
+    //zadatak 4
+    function najveciBroj(a, b, c) {
+    return Math.max(a, b, c);
+}
+console.log(najveciBroj(10, 20, 15));
+
+        //ZADATAK 5
+
+        function pretvorba (celzijusi) {
+            return (celzijusi * 1.8 + 32)
+        }
+
+        alert (pretvorba(10))
+        
+        function punoljetnost(godine) {
+            if (godine >= 18) {
+                return 'Punoljetan!'
+            }else {
+                return 'Nije!'
+            }
+        }
+
+        alert (punoljetnost(19))
+            
+        
+
+</script>
+</body>
+</html>

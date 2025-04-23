@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+let korisnici = [
+    { ime: "Marko", godine: 25, email: "marko@gmail.com" },
+    { ime: "Ana", godine: 17, email: "ana@gmail.com" },
+    { ime: "Petar", godine: 30, email: "petar@hotmail.com" },
+    { ime: "Ivana", godine: 16, email: "ivana@sigmail.com" }
+];
+
+function ispisiKorisnike(korisnici) {
+    for (let korisnik of korisnici) {
+        if (korisnik.godine > 18) {
+            console.log(`Ime: ${korisnik.ime}, Email: ${korisnik.email}`);
+        }
+    }
+}
+
+ispisiKorisnike(korisnici);
+
+    </script>
+</body>
+</html>

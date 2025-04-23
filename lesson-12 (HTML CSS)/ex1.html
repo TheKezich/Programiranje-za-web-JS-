@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+</head>
+
+<body>
+    <button class="button-1">
+        SIGMAAA
+    </button>
+
+    <img src="images/UNKA.png" alt="" class="img-1">
+
+    <button class="btn-2">BATN</button>
+
+    <img src="images/UNKA.png" alt="" class="img-2">
+
+    <button class="btn-3">
+        CLICK FOR COOKIE :)
+    </button>
+
+    <button class="btn-4">
+        <span class="text">Enter the Universe!</span>
+    </button>
+
+
+    <p class="p-2">
+        Istakni me!
+    </p>
+
+    <p class="p-3">
+        Povećaj me!
+    </p>
+    <p class="p-4">
+        Osjenci me!
+    </p>
+
+    <img src="UNKA.png" alt="" class="img-3">
+
+    <p class="p-5">
+        POVEĆAJ MEEE!
+    </p>
+
+    <button class="btn-5">Pređi mišem</button>
+
+
+</body>
+
+</html>
+
+<style>
+    p {
+        font-size: 21px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+
+    body {
+        padding: 20px;
+        justify-content: center;
+    }
+
+    .button-1 {
+        padding: 20px;
+        border-radius: 32px;
+        border-width: 0.2px;
+        border: solid;
+        background-color: none;
+        color: black;
+        transition: 2s;
+    }
+
+    .button-1:hover {
+        color: red;
+    }
+
+    .img-1 {
+        width: 20%;
+        transition: 2s;
+    }
+
+    .img-1:hover {
+        width: 30%;
+    }
+
+    .btn-2 {
+        background-color: blue;
+        transition: 0.3;
+    }
+
+    .btn-2:hover {
+        background-color: green;
+        color: rgb(255, 149, 149);
+    }
+
+    .img-2 {
+
+        width: 20%;
+        transform: 1s;
+    }
+
+    .img-2:hover {
+        border: 5px solid #000000;
+    }
+
+
+    .btn-3 {
+        margin: 20px;
+        height: 62px;
+        width: 250px;
+        transition: 0.5s;
+        background-color: bisque;
+        border: none;
+        border-radius: 10px;
+        font-weight: bold;
+        color: brown;
+    }
+
+    .btn-3:hover {
+        height: 82px;
+        width: 350px;
+    }
+
+    .btn-4 {
+        margin-top: 20px;
+        align-items: center;
+        background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+        border: 0;
+        border-radius: 8px;
+        box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+        box-sizing: border-box;
+        color: #ffffff;
+        display: flex;
+        font-size: 18px;
+        justify-content: center;
+        line-height: 1em;
+        max-width: 100%;
+        min-width: 140px;
+        padding: 3px;
+        text-decoration: none;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        white-space: nowrap;
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+
+    .btn-4:active,
+    .btn-4:hover {
+        outline: 0;
+    }
+
+    .btn-4 span {
+        background-color: rgb(5, 6, 45);
+        padding: 16px 24px;
+        border-radius: 6px;
+        width: 100%;
+        height: 100%;
+        transition: 300ms;
+    }
+
+    .btn-4:hover span {
+        background: none;
+    }
+
+    .btn-4:active {
+        transform: scale(0.9);
+    }
+
+    .btn-4:hover {
+        transform: rotate(80deg);
+    }
+
+    .p-2:hover {
+        text-decoration: underline;
+    }
+
+    .p-3:hover {
+        font-size: 42px;
+    }
+
+    .p-4 {
+        display: inline-block;
+    }
+
+    .p-4:hover {
+        box-shadow: -3px -3px 43px 0px rgba(0, 0, 0, 0.75);
+    }
+
+    .img-3 {
+        display: block;
+        width: 150px;
+
+    }
+
+    .img-3:hover {
+        filter: brightness(70%);
+    }
+
+    .p-5 {
+        font-size: 20px;
+        margin: 50px;
+    }
+
+    .p-5:hover {
+        transform: scale(0.8);
+
+    }
+
+    .btn-5 {
+      padding: 12px 24px;
+      font-size: 16px;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      background: #ff6b6b; /* osnovna boja bez hovera */
+      transition: background 0.3s ease;
+    }
+
+    .btn-5:hover {
+      background: linear-gradient(45deg, #ff6b6b, #f8e71c);
+      background-size: 200% 200%;
+      animation: pulsiraj 3s ease-in-out infinite;
+    }
+
+    @keyframes pulsiraj {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+</style>

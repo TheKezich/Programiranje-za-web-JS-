@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        function kategorijaOcjene (ocjena){
+
+            if (ocjena >= 90 && ocjena <= 100) {
+                return 'Odličan';
+            } else if (ocjena >= 75 && ocjena <= 89){
+                return 'VrloDobar';
+            } else if (ocjena >= 60 && ocjena <= 74) {
+                return 'Dobar';
+            } else if (ocjena >= 50 && ocjena < 59) {
+                return 'dovoljan';
+            } else  {
+                return 'nedovoljan';
+            }
+        }
+
+        alert(kategorijaOcjene(92));
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=vu, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    function zbroj (broj1, broj2){
+            return broj1 + broj2;
+            
+        }
+        // alert(zbroj(7, 9))
+        
+
+        function parnost (broj){
+            return broj%2===0 ;
+
+        }
+        // alert (parnost(7));
+
+        function pretvorba (celzijusi) {
+            return (celzijusi * 1.8 + 38)
+        }
+
+        // alert (pretvorba(18))
+
+        // funkcija koja prima 3 broja i vrati najveci broj
+
+        function najveci(broj1, broj2, broj3) {
+            return Math.max(broj1, broj2, broj3)
+        }
+
+        // alert (najveci (12, 11 ,18))
+        
+
+        function pretvorba(minute) {
+            let sati  = Math.floor(minute / 60);
+            let preostaleMinute = minute % 60;
+
+            return `sati je ${sati} minuta je ${preostaleMinute}`
+            
+
+        }
+        // alert (pretvorba(130));
+
+
+        // napravite funkciju koja prima pocetak i kraj intervala i nek gleda 
+        // jel taj broj unutar intervala ako je ispisi u intervalu je ako nije onda ispisi da nije
+
+        function interval(broj, pocetak, kraj) {
+            if (broj > pocetak && broj < kraj){
+                return 'Broj je u intervalu'
+            } else {
+                return 'nije u intervalu'
+            }
+        }
+
+        // alert (interval(12, 11, 29))
+
+        // provjeri jel broj djeljiv sa 3 i 5
+
+        function djeljivost(broj) {
+            if (broj / 3 === 0 && broj / 5 === 0) {
+                return 'Djeljiv je'
+            } else {
+                return 'Nije djeljiv'
+            }
+
+            alert (djeljivost(15))  
+        }
+
+
+        function brojevi(broj1, broj2, broj3){
+            let najveci = '';
+            if(broj1>broj2 && broj1 < broj3){
+                najveci = broj1;
+            } else if(broj2 < broj1 && broj2 < broj3){
+                gg
+            }
+        }
+            
+
+    
+    
+    
+
+    </script>
+</body>
+</html>
