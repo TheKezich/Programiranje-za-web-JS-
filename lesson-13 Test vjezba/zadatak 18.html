@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+          font-family: Arial;
+          background: #f2f2f2;
+          padding: 20px;
+        }
+        .zad {
+          background: white;
+          padding: 15px;
+          margin-bottom: 20px;
+          border: 1px solid #ccc;
+        }
+        input {
+          margin-top: 5px;
+          padding: 5px;
+        }
+        button {
+          margin-top: 5px;
+        }
+        .output {
+          margin-top: 10px;
+          font-weight: bold;
+        }
+      </style>
+</head>
+<body>
+    <!-- Zadatak 18 -->
+<div class="zad">
+    <h3>Zadatak 18 – Odbrojavanje (while)</h3>
+    <input id="broj18" type="number">
+    <button onclick="odbrojavanje()">Odbroji</button>
+    <div class="output" id="rez18"></div>
+  </div>
+
+  <script>
+function odbrojavanje() {
+    let broj = Number(document.getElementById("broj18").value);
+    let tekst = "";
+    while (broj >= 0) {
+      tekst += broj + " ";
+      broj = broj - 1;
+    }
+    document.getElementById("rez18").innerText = tekst;
+  }
+  
+  </script>
+  
+</body>
+</html>

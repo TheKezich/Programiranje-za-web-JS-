@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <title>JS zadatci</title>
+  <style>
+    body {
+      font-family: Arial;
+      background: #f2f2f2;
+      padding: 20px;
+    }
+    .zad {
+      background: white;
+      padding: 15px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+    }
+    input {
+      margin-top: 5px;
+      padding: 5px;
+    }
+    button {
+      margin-top: 5px;
+    }
+    .output {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<h2>JS Zadatci 13–19</h2>
+
+<!-- Zadatak 13 -->
+<div class="zad">
+  <h3>Zadatak 13 – Je li broj prost?</h3>
+  <input id="broj13" type="number">
+  <button onclick="provjeriProst()">Provjeri</button>
+  <div class="output" id="rez13"></div>
+</div>
+
+<!-- Zadatak 14 -->
+<div class="zad">
+  <h3>Zadatak 14 – Tablica množenja</h3>
+  <input id="broj14" type="number">
+  <button onclick="tablica()">Prikaži</button>
+  <div class="output" id="rez14"></div>
+</div>
+
+<!-- Zadatak 15 -->
+<div class="zad">
+  <h3>Zadatak 15 – Brojanje samoglasnika</h3>
+  <input id="tekst15" type="text">
+  <button onclick="broji()">Izračunaj</button>
+  <div class="output" id="rez15"></div>
+</div>
+
+<!-- Zadatak 16 -->
+<div class="zad">
+  <h3>Zadatak 16 – Kalkulator</h3>
+  <input id="a16" type="number">
+  <input id="b16" type="number">
+  <input id="op16" type="text" placeholder="+, -, *, /">
+  <button onclick="kalkuliraj()">Izračunaj</button>
+  <div class="output" id="rez16"></div>
+</div>
+
+<!-- Zadatak 17 -->
+<div class="zad">
+  <h3>Zadatak 17 – Najveći broj u nizu</h3>
+  <input id="niz17" type="text" placeholder="npr. 4,5,8,2">
+  <button onclick="najveci()">Prikaži</button>
+  <div class="output" id="rez17"></div>
+</div>
+
+<!-- Zadatak 18 -->
+<div class="zad">
+  <h3>Zadatak 18 – Odbrojavanje (while)</h3>
+  <input id="broj18" type="number">
+  <button onclick="odbrojavanje()">Odbroji</button>
+  <div class="output" id="rez18"></div>
+</div>
+
+<!-- Zadatak 19 -->
+<div class="zad">
+  <h3>Zadatak 19 – Kvadrati brojeva</h3>
+  <input id="broj19" type="number">
+  <button onclick="kvadrati()">Prikaži kvadrate</button>
+  <div class="output" id="rez19"></div>
+</div>
+
+<script>
+function provjeriProst() {
+  let broj = Number(document.getElementById("broj13").value);
+  let prost = true;
+  if (broj <= 1) prost = false;
+  for (let i = 2; i < broj; i++) {
+    if (broj % i == 0) prost = false;
+  }
+  document.getElementById("rez13").innerText = prost ? "Broj je prost." : "Broj NIJE prost.";
+}
+
+function tablica() {
+  let broj = Number(document.getElementById("broj14").value);
+  let tekst = "";
+  for (let i = 1; i <= 10; i++) {
+    tekst += broj + " x " + i + " = " + (broj * i) + "\n";
+  }
+  document.getElementById("rez14").innerText = tekst;
+}
+
+function broji() {
+  let tekst = document.getElementById("tekst15").value;
+  let brojac = 0;
+  for (let i = 0; i < tekst.length; i++) {
+    let slovo = tekst[i];
+    if (
+      slovo == "a" || slovo == "e" || slovo == "i" || slovo == "o" || slovo == "u" ||
+      slovo == "A" || slovo == "E" || slovo == "I" || slovo == "O" || slovo == "U"
+    ) {
+      brojac++;
+    }
+  }
+  document.getElementById("rez15").innerText = "Samoglasnika: " + brojac;
+}
+
+function kalkuliraj() {
+  let a = Number(document.getElementById("a16").value);
+  let b = Number(document.getElementById("b16").value);
+  let op = document.getElementById("op16").value;
+  let r = 0;
+
+  if (op == "+") r = a + b;
+  else if (op == "-") r = a - b;
+  else if (op == "*") r = a * b;
+  else if (op == "/") {
+    if (b == 0) {
+      document.getElementById("rez16").innerText = "Ne može se dijeliti s nulom.";
+      return;
+    }
+    r = a / b;
+  } else {
+    document.getElementById("rez16").innerText = "Nepoznata operacija.";
+    return;
+  }
+
+  document.getElementById("rez16").innerText = "Rezultat: " + r;
+}
+
+function najveci() {
+  let tekst = document.getElementById("niz17").value;
+  let dijelovi = tekst.split(",");
+  let max = Number(dijelovi[0]);
+
+  for (let i = 1; i < dijelovi.length; i++) {
+    let broj = Number(dijelovi[i]);
+    if (broj > max) {
+      max = broj;
+    }
+  }
+
+  document.getElementById("rez17").innerText = "Najveći broj: " + max;
+}
+
+
+function kvadrati() {
+  let n = Number(document.getElementById("broj19").value);
+  let tekst = "";
+  for (let i = 1; i <= n; i++) {
+    tekst += i + "² = " + (i * i) + "\n";
+  }
+  document.getElementById("rez19").innerText = tekst;
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="in">
+
+    <script>
+        function ispišiBr() {
+            const N = parseInt(document.getElementById('in').value);
+            let tekst ='';
+            let zbroj= 0;
+            for (let i = 1; i <= N; i++) {
+                zbroj += 1;
+                tekst += i + '';
+            }
+            document.getElementById('rezultat').innerHTML = tekst;
+            document.getElementById('racunanje').innerText = zbroj;
+        }
+    </script>
+</body>
+</html>

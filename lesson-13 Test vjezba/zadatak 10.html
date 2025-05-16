@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brojevi od 1 do N</title>
+    <script>
+        function ispisiBrojeve() {
+            const n = parseInt(document.getElementById('broj').value);
+            const rezultat = document.getElementById('rezultat');
+            rezultat.innerHTML = '';
+
+            if (isNaN(n) || n <= 0) {
+                rezultat.innerHTML = 'Unesite ispravan broj veći od 0.';
+                return;
+            }
+
+            for (let i = 1; i <= n; i++) {
+                rezultat.innerHTML += i + '<br>';
+            }
+        }
+
+        
+    </script>
+</head>
+<body>
+    <h1>Ispis brojeva od 1 do N</h1>
+    <label for="broj">Unesite broj N:</label>
+    <input type="number" id="broj" min="1">
+    <button onclick="ispisiBrojeve()">KLIKNI!</button>
+    <div id="rezultat" style="margin-top: 20px;"></div>
+</body>
+</html>

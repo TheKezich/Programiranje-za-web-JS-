@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!DOCTYPE html>
+    <html lang="hr">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Promjena teksta</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                text-align: center;
+                margin-top: 100px;
+            }
+
+            button {
+                margin-top: 20px;
+                padding: 10px 20px;
+                font-size: 16px;
+                cursor: pointer;
+            }
+
+            #kvadrat {
+                width: 150px;
+                height: 150px;
+                background-color: steelblue;
+                margin: 20px auto;
+            }
+
+            .add-stavka {
+                display: block;
+                margin-left: 550px;
+            }
+        </style>
+    </head>
+
+<body>
+
+    <p id="mojParagraf">Klikni dugme da promijeniš tekst</p>
+    <button onclick="promijeniTekst()">Klikni me</button>
+
+
+    <ul id="lista">
+        <li>Nova stavka 1</li>
+    </ul>
+    <button class="add-stavka" onclick="dodajStavku()">
+        dodaj stavku
+    </button>
+
+    <div id="kvadrat"></div>
+
+    <button onclick="sakrijDiv()">Sakrij</button>
+    <button onclick="prikaziDiv()">Prikaži</button>
+
+    <input type="text" id="ime" placeholder="Unesi text">
+    <button onclick="unesiIme()">Prijavi Se!</button>
+
+    <p id="rezultat"></p>
+
+
+    <script>
+
+        function unesiIme() {
+            const ime = document.getElementById('ime').value.trim();
+            const rezultat = document.getElementById('rezultat');
+
+            if (ime === '') {
+                rezultat.innerText = 'Molim Unesite Ime!';
+            } else {
+                rezultat.innerText = 'Zdravo, ' + ime;
+            }
+        }
+
+        let brojac = 1;
+
+        function promijeniTekst() {
+            document.getElementById('mojParagraf').innerText = 'Tekst je promijenjen!';
+        }
+
+        function dodajStavku() {
+            brojac++;
+            const lista = document.getElementById('lista');
+            const novaStavka = document.createElement('li');
+            novaStavka.innerText = 'Nova stavka' + brojac;
+            lista.appendChild(novaStavka)
+        }
+
+        function sakrijDiv() {
+            document.getElementById('kvadrat').style.display = 'none';
+        }
+
+        function prikaziDiv() {
+            document.getElementById('kvadrat').style.display = 'block';
+        }
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>
